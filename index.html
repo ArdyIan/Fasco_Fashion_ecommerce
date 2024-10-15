@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Eccomerce</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">FASCO</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#new_arrivals">New Arrivals</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#sign_in">Sign in</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- hamburger navigation -->
+    <nav id="hamburger-nav">
+      <div class="logo">Ardy Ian</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <img src="./assets/header-background.png" alt="Background Image" id="background-image" />
+    </div>
+  </body>
+</html>
