@@ -7,55 +7,78 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">FASCO</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#deals">Deals</a></li>
-          <li><a href="#new_arrivals">New Arrivals</a></li>
-          <li><a href="#packages">Packages</a></li>
-          <li><a href="#sign_in">Sign in</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- hamburger navigation -->
-    <nav id="hamburger-nav">
-      <div class="logo">Ardy Ian</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <section id="profile">
+      <nav id="desktop-nav">
+        <div class="logo">FASCO</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#new_arrivals">New Arrivals</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#sign_in">Sign in</a></li>
+          </ul>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </nav>
+      <!-- hamburger navigation -->
+      <nav id="hamburger-nav">
+        <div class="logo">Ardy Ian</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#deals" onclick="toggleMenu()">Deals</a></li>
+            <li><a href="#new_arrivals" onclick="toggleMenu()">New Arrivals</a></li>
+            <li><a href="#packages" onclick="toggleMenu()">Packages</a></li>
+            <li><a href="#sign_in" onclick="toggleMenu()">Sign In</a></li>
+          </div>
         </div>
+      </nav>
+      <!-- BACKGROUND IMAGE -->
+      <div class="container">
+        <img src="./assets/header-background.png" alt="Background Image" id="background-image" />
       </div>
-    </nav>
-    <!-- BACKGROUND IMAGE -->
-    <div class="container">
-      <img src="./assets/header-background.png" alt="Background Image" id="background-image" />
-    </div>
-    <div class="brand-name">
-      <span>CHANEL</span>
-      <span>LOUIS VUITTON</span>
-      <span>PRADA</span>
-      <span>CHANEL</span>
-      <span>CHANEL</span>
-    </div>
+      <div class="brand-name">
+        <span>CHANEL</span>
+        <span>LOUIS VUITTON</span>
+        <span>PRADA</span>
+        <span>CHANEL</span>
+        <span>CHANEL</span>
+      </div>
+    </section>
     <!-- CAROUSEL SLIDER -->
-    <section class="content-wrapper">
+    <section class="deals">
       <div class="text-section">
-        <h2>Luxury Brands</h2>
-        <p>
-          Discover the elegance and beauty of the world's most luxurious fashion brands.
-      Chanel, Louis Vuitton, Prada, and more.
-        </p>
+        <h2>Deals Of The Month</h2>
+        <p>Discover the elegance and beauty of the world's most luxurious fashion brands. Chanel, Louis Vuitton, Prada, and more.</p>
+        <button class="buy-now-button">Buy Now</button>
+        <h3>Hurry, Before It’s Too Late!</h3>
+        <!-- COUNT DOWN -->
+        <div class="launch-time">
+          <div>
+            <p id="days">00</p>
+            <span>Days</span>
+          </div>
+          <div>
+            <p id="hours">00</p>
+            <span>Hours</span>
+          </div>
+          <div>
+            <p id="minutes">00</p>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <p id="seconds">00</p>
+            <span>Seconds</span>
+          </div>
+          <script src="count_down.js"></script>
+        </div>
       </div>
+
       <div class="container-slider">
         <div class="slider-wrapper">
           <div class="slider">
@@ -76,5 +99,6 @@
       </div>
     </section>
     <script src="script.js"></script>
+    <script src="toggle_menu.js"></script>
   </body>
 </html>
