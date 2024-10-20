@@ -310,7 +310,7 @@ a:hover {
   text-align: center;
 }
 
-/* NEW ARRIVALS SECTION */
+/* NEW ARRIVALS IMAGE GALLERY */
 
 .btn-container {
   position: relative;
@@ -395,4 +395,88 @@ a:hover {
 .card-price {
   justify-content: flex-end;
   display: flex;
+}
+
+.btn-view-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.view-more-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-button:hover {
+  background-color: #333;
+}
+
+.view-more-button:active {
+  transform: translateY(1px);
+}
+
+/* PACKAGES */
+
+.packages {
+  padding: 60px 20px;
+  background: linear-gradient(105deg, white 40%, #f0f0f0 40%);
+  /* min-height: calc(100vh - 120px); */
+  /* min-height: 100vh; */
+  height: 68vh;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.packages img {
+  width: 40%;
+  height: auto;
+}
+
+.packages h1 {
+  text-align: left;
+}
+
+.text-content {
+  text-align: left;
+  width: 40%;
+}
+
+.size {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.text-content .text-pack,
+h1,
+h6,
+h3 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.size-label {
+  background-color: black;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4rem;
 }
